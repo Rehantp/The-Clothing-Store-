@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-//import data from "../data";
 import axios from "axios";
 import { useEffect, useReducer, useState } from "react";
 import logger from "use-reducer-logger";
+//import data from "../data";
 
 const reducer = (state, action) => {
   switch (action.type) {

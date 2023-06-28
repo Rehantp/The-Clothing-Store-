@@ -50,3 +50,7 @@ header a {
   background-color: #f0c040;
   color: black;
 }
+
+.image.large {
+  max-width: 100%;
+}

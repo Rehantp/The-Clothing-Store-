@@ -2,13 +2,12 @@ import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
 import Navbar from "react-bootstrap/Navbar";
-//import Badge from "react-bootstrap/Badge ";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { LinkContainer } from "react-router-bootstrap";
 import { useContext } from "react";
-import { Badge } from "react-bootstrap";
-import { Store } from "./components/Store";
+import { Store } from "./Store";
+import Badge from "react-bootstrap/Badge";
 
 function App() {
   const { state } = useContext(Store);
@@ -25,7 +24,7 @@ function App() {
               <Nav className="me-auto">
                 <Link to="/cart" className="nav-link">
                   Cart
-                  {cart.cartItem.length > 0 && (
+                  {cart.cartItem?.length >= 0 && (
                     <Badge pill bg="danger">
                       {cart.cartItem.length}
                     </Badge>

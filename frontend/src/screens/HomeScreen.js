@@ -3,10 +3,10 @@ import { useEffect, useReducer } from "react";
 import logger from "use-reducer-logger";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Product from "../components.js/Product";
+import Product from "../components/Product";
 import { Helmet } from "react-helmet-async";
-import LoadingBox from "../components.js/Loadingbox";
-import MessageBox from "../components.js/MessageBox";
+import LoadingBox from "../components/Loadingbox";
+import MessageBox from "../components/MessageBox";
 //import data from "../data";
 
 const reducer = (state, action) => {

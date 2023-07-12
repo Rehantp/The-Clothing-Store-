@@ -47,7 +47,7 @@ export default function CartScreen() {
                       <span>{item.quantity}</span>{" "}
                       <Button
                         variant="light"
-                        disabled={item.quantity === item.countInStock}
+                        disabled={item.quantity === item.conuntInstock}
                       >
                         <i className="fas fa-plus-circle"></i>
                       </Button>

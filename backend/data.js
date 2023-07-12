@@ -2,6 +2,7 @@
 const data = {
   products: [
     {
+      _id: "1",
       name: "Nike Tshirt",
       slug: "Nike-Tshirt",
       category: "Shirts",
@@ -15,6 +16,7 @@ const data = {
         "Our floral print Tour Polo is all about consistency, with a stretchy, sweat-wicking feel that helps you get the most out your swing every time.",
     },
     {
+      _id: "2",
       name: "Puma Tshirt",
       slug: "Puma-Tshirt",
       category: "Shirts",
@@ -28,6 +30,7 @@ const data = {
         "A modern take on timeless motorsport style, the latest addition to PUMA's partnership with BMW Motorsport features pops of color and a tonal graphic pattern. This classic jacquard polo is accented by a stand-up ribbed collar with contrast piping and co-branded details.",
     },
     {
+      _id: "3",
       name: "Puma Polo",
       slug: "Puma-Polo",
       category: "Shirts",

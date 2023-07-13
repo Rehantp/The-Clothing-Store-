@@ -24,13 +24,10 @@ const reducer = (state, action) => {
 
 function HomeScreen() {
   const [{ loading, error, products }, dispatch] = useReducer(logger(reducer), {
-    products: [], 
+    products: [],
     loading: true,
     error: "",
   });
-
-  //products-varable,setproducts-update varable
-  //const [products, setProducts] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -41,8 +38,6 @@ function HomeScreen() {
       } catch (err) {
         dispatch({ type: "FETCH_FAIL", payload: err.messeage });
       }
-
-      //setProducts(result.data);
     };
     fetchData();
   }, []);
